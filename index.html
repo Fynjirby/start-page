@@ -35,6 +35,17 @@
                 <label for="search">Search:</label>
                 <input type="text" name="q" id="search" style="color: #fff;">
                 <input type="submit" value="Search" style="color: #fff;">
+                <a href="#" onclick="reload_confirm(); return false;">
+                    Обновить страницу
+                </a>
+
+                <script>
+                    function reload_confirm() {
+                        if (confirm('Clear boxes?')) {
+                            window.location.reload();
+                        }
+                    }
+                </script>
             </form>
         </div>
     </font>
